@@ -1,0 +1,32 @@
+{
+  "name": "appc-cli-mocha",
+  "version": "0.0.1",
+  "description": "simple, flexible, fun mocha framework extension with server response mock-ing",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "Muhammad Dadu",
+  "license": "ISC",
+  "dependencies": {
+    "appc-platform-sdk": "^1.0.73",
+    "async": "^1.2.0",
+    "body-parser": "^1.12.4",
+    "connect-busboy": "0.0.2",
+    "express": "^4.12.4",
+    "lodash": "^3.9.3",
+    "request": "^2.57.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-appc-coverage": "^0.2.0",
+    "grunt-appc-js": "^1.0.10",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-env": "^0.4.4",
+    "grunt-kahvesi": "^0.2.4",
+    "grunt-mocha-test": "^0.12.7",
+    "mocha": "^2.2.5",
+    "request": "^2.57.0",
+    "should": "^6.0.3"
+  }
+}
