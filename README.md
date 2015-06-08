@@ -7,7 +7,7 @@ appc-cli-mocha [![Build Status](https://travis-ci.org/muhammaddadu/appc-cli-moch
 
 ### Features
 
-* Authomatically redirects all trafic from the appc-cli to the internal request mocker
+* Authomatically redirects all tthe raffic from the appc-cli to the internal request mocker
 * Added support for OS specific tests
 * Logs from appc-logger are automatically stored for easy access
 

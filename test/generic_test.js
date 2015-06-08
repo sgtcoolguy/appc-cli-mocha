@@ -27,7 +27,8 @@ core.newTest('', {
 				});
 			}
 		}
-	]
+	],
+	endpoints_include: [require('./endpoints/example.js')]
 }, function (err, plugin) {
 	var appc = this.appc,
 		tmpDir = this.tmpDir,
@@ -52,6 +53,18 @@ core.newTest('', {
 			request({
 				method: 'get',
 				url: 'http://127.0.0.1:8118/test',
+				json: true
+			}, function (err, req, res) {
+				should.not.exist(err);
+				should(res).have.property('success');
+				return done();
+			});
+		});
+
+		it('endpoint /example', function (done) {
+			request({
+				method: 'get',
+				url: 'http://127.0.0.1:8118/example',
 				json: true
 			}, function (err, req, res) {
 				should.not.exist(err);
