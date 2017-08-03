@@ -1,14 +1,25 @@
 {
   "name": "appc-cli-mocha",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "simple, flexible, fun mocha framework extension with server response mock-ing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appcelerator/appc-cli-mocha.git"
+  },
+  "keywords": [
+    "appc-cli",
+    "appcelerator",
+    "titanium",
+    "mocha"
+  ],
   "main": "lib/index.js",
   "scripts": {
-    "test": "grunt"
+    "test": "JUNIT_REPORT_PATH=junit_report.xml grunt"
   },
   "author": "Muhammad Dadu",
   "license": "ISC",
   "dependencies": {
+    "appc-platform-sdk": "^1.0.73",
     "async": "^1.2.0",
     "body-parser": "^1.12.4",
     "chalk": "^1.0.0",
@@ -18,16 +29,14 @@
     "request": "^2.57.0"
   },
   "devDependencies": {
-    "appc-platform-sdk": "^1.0.73",
-    "grunt": "^0.4.5",
-    "grunt-appc-coverage": "^0.2.0",
+    "grunt": "^1.0.1",
     "grunt-appc-js": "^1.0.10",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-env": "^0.4.4",
-    "grunt-kahvesi": "^0.2.4",
-    "grunt-mocha-test": "^0.12.7",
-    "mocha": "^2.2.5",
-    "request": "^2.57.0",
+    "grunt-mocha-istanbul": "^3.0.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^3.5.0",
+    "mocha-jenkins-reporter": "^0.3.7",
     "should": "^6.0.3"
   }
 }

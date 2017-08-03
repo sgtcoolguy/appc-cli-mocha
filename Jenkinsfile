@@ -1,0 +1,5 @@
+library 'pipeline-library'
+
+buildNPMPackage {
+	
+}
